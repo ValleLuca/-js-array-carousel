@@ -23,13 +23,17 @@ const paragrafoArr = [
 ];
 
 let cont = 0;
-let imgGrandi = document.querySelector("img-grandi");
+let imgGrandi = '';
 
-for(let i = 0; i < imgArr.length; i++)
+for(let isx = 0; isx < imgArr.length; isx++)
 {
     imgGrandi += `
-    <div class="imgFunction" id="item-${i+1}">
-        <img class="imgFunction.active" src="${imgArr[i]}">
+    <div class="imgFunction" id="item-${isx+1}">
+        <img class="imgFunction" src="${imgArr[i]}">
     </div>
-    `
+    `;
 }
+
+let imgGrandi = document.querySelector('img-grandi');
+imgGrandi.innerHTML = img-grandi;
+
