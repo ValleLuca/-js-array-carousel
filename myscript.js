@@ -22,3 +22,14 @@ const paragrafoArr = [
     'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,',
 ];
 
+let cont = 0;
+let imgGrandi = document.querySelector("img-grandi");
+
+for(let i = 0; i < imgArr.length; i++)
+{
+    imgGrandi += `
+    <div class="imgFunction" id="item-${i+1}">
+        <img class="imgFunction.active" src="${imgArr[i]}">
+    </div>
+    `
+}

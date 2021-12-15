@@ -1,5 +1,17 @@
-.dim {
-height: 50%;
-width: 50%;
+.img-grandi {
+
 }
 
+.img-piccole{
+    
+}
+
+.imgFunction{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.imgFunction.active {
+    display: block;
+}
