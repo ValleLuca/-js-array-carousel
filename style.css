@@ -18,3 +18,8 @@
 .imgFunction.active {
     display: block;
 }
+
+.testoimggrande {
+    bottom: 10px;
+    left: 20px;
+}

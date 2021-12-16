@@ -23,17 +23,26 @@ const paragrafoArr = [
 ];
 
 let cont = 0;
-let imgGrandi = '';
+const imgGrandi = document.querySelector(`.img-grandi`)
 
 for(let isx = 0; isx < imgArr.length; isx++)
 {
-    imgGrandi += `
+    imgGrandi.innerHTML += `
     <div class="imgFunction" id="item-${isx+1}">
-        <img class="imgFunction" src="${imgArr[i]}">
-    </div>
-    `;
+        <img class="imgFunction" src="${imgArr[isx]}">
+        <h2 class"testoimggrande position-absolute">${titoloArr[isx]}</h2>
+        <p class"testoimggrande position-absolute">${paragrafoArr[isx]}</p>
+    </div>`;
 }
 
-let imgGrandi = document.querySelector('img-grandi');
-imgGrandi.innerHTML = img-grandi;
+const imgPiccole = document.querySelector(`.img-piccole`)
+
+for(let idx = 0; idx < imgArr.length; idx++)
+{
+    imgPiccole.innerHTML += `
+    <div id="item-${idx+1}">
+        <img class="imgFunction" src="${imgArr[idx]}">
+    </div>`;
+}
+
 
